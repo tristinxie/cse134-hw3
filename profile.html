@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <header>
     <input type="checkbox" id="nav-toggle">
     <nav class="menu">
       <ul>
-        <li><a href="/"><img src=/assets/favicon.ico alt="Tristin Xie Logo"></a></li>
+        <li><a class="main-logo" href="/"><img src=/assets/favicon.ico alt="Tristin Xie Logo"></a></li>
         <li><a href="/blog.html">Blog</a></li>
         <li><a href="/assets/TristinXieResume.pdf">Resume</a></li>
         <li><a href="/profile.html">About</a></li>
@@ -27,16 +28,18 @@
   <br>
 	<main>
     <article>
-        <picture>
-          <source srcset="/assets/me_wide.jpg" media="(width >= 500px)">
-          <img height="300" src="/assets/me.jpg" alt="Tristin Xie picture">
-        </picture>
-        <h1>My Profile</h1>
-        <p>
-          Hi! My name is Tristin Xie. I am a student at UC San Diego. I am passionate in computer science and learning web development!
-          This website is for me to express my thoughts on the tech field and showcase my portfolio. It will also be the place where I demo
-          and experiment with web features. If you are interested in my work, please take a look around the site! You can also contact me anytime!
-        </p>
+        <section class="me-section">
+          <picture>
+            <source srcset="/assets/me_wide.jpg" media="(width >= 500px)">
+            <img height="300" src="/assets/me.jpg" alt="Tristin Xie picture">
+          </picture>
+          <h1>My Profile</h1>
+          <p>
+            Hi! My name is Tristin Xie. I am a student at UC San Diego. I am passionate in computer science and learning web development!
+            This website is for me to express my thoughts on the tech field and showcase my portfolio. It will also be the place where I demo
+            and experiment with web features. If you are interested in my work, please take a look around the site! You can also contact me anytime!
+          </p>
+        </section>
     </article>
   </main>
 </body>
