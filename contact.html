@@ -40,57 +40,58 @@
     <article>
       <h1>Contact Me</h1>
       <p>Use the form below if you want to contact me. Please give me <strong>2 days</strong> to respond. If I don't respond within 2 days <em>please don't hestitate</em> to contact me again!</p>
+      <section id="form-section">
+        <form id="contact-form" action="#" method="post">
+          <form-field>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autofocus required minlength="2">
+            <field-error>Please enter your name (at least 2 characters)</field-error>
+            <br>
+          </form-field>
 
-      <form id="contact-form" action="#" method="post">
-        <form-field>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" autofocus required minlength="2">
-          <field-error>Please enter your name (at least 2 characters)</field-error>
-          <br>
-        </form-field>
+          <form-field>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <field-error>Please enter a valid email address of form <code>user@email.address</code></field-error>
+            <br>
+          </form-field>
 
-        <form-field>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-          <field-error>Please enter a valid email address of form <code>user@email.address</code></field-error>
-          <br>
-        </form-field>
+          <form-field>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required minlength="2">
+            <field-error>Please enter a subject (at least 2 characters)</field-error>
+            <br>
+          </form-field>
 
-        <form-field>
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" required minlength="2">
-          <field-error>Please enter a subject (at least 2 characters)</field-error>
-          <br>
-        </form-field>
+          <form-field>
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="" disabled>Select a category...</option>
+              <hr>
+              <option value="general">General Inquiry</option>
+              <option value="recruitment">Recruitment</option>
+              <option value="feedback">Feedback</option>
+              <option value="bug">Bug Report</option>
+              <option value="other">Other</option>
+            </select>
+            <br>
+          </form-field>
 
-        <form-field>
-          <label for="category">Category</label>
-          <select id="category" name="category" required>
-            <option value="" disabled>Select a category...</option>
-            <hr>
-            <option value="general">General Inquiry</option>
-            <option value="recruitment">Recruitment</option>
-            <option value="feedback">Feedback</option>
-            <option value="bug">Bug Report</option>
-            <option value="other">Other</option>
-          </select>
-          <br>
-        </form-field>
+          <form-field>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required minlength="10"></textarea>
+            <field-error>Please enter your message (at least 10 characters)</field-error>
+            <br>
+          </form-field>
 
-        <form-field>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required minlength="10"></textarea>
-          <field-error>Please enter your message (at least 10 characters)</field-error>
-          <br>
-        </form-field>
-
-        <button
-            type="button"
-            commandfor="confirm-dialog"
-            command="show-modal">
-            Send Message
-        </button>
-      </form>
+          <button
+              type="button"
+              commandfor="confirm-dialog"
+              command="show-modal">
+              Send Message
+          </button>
+        </form>
+      </section>
     </article>
   </main>
   <br>

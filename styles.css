@@ -4,7 +4,7 @@
 	--main-color: #1c2b47;
 	--accent-color: #f7d046;
 	--font-stack: Arial, Helvetica, sans-serif;
-	--page-width: 80rem;
+	--page-width: 95%;
 	--page-padding: 2rem;
 	--post-card-width: 25rem;
 }
@@ -90,9 +90,11 @@ nav button {
 	color: var(--menu-color)
 }
 
-#me-section {
+.me-section {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
 }
 article socials-container a {
 	background-color: transparent;
@@ -171,6 +173,38 @@ a:focus, input:focus, button:focus {
 .post h2 {
 	overflow-wrap: break-word;
 }
+#form-section {
+	display: flex;
+	justify-content: center;
+}
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	min-width: 50rem;
+}
+
+form-field {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+form-field label {
+	font-weight: bold;
+}
+
+form-field input, form-field select, form-field textarea {
+	padding: 0.5em 0.8em;
+	border: 1px solid #999;
+	border-radius: 0.5rem;
+}
+
+form-field textarea {
+	min-height: 5rem;
+	resize: vertical;
+}
+
 @media (max-width: 60rem) {
 	article {
 		flex-direction: column-reverse;
